@@ -21,6 +21,7 @@ public class Crematorium {
                 "Rembo", "Commando", "Terminator", "Combo"};
         Random random = new Random();
         int count = 0;
+        
         if (1 == 1) {
             User[] users = new User[15000];
             for (int i = 0; i < users.length; i++) {
@@ -28,6 +29,9 @@ public class Crematorium {
                         random.nextInt(20) + 16,
                         names[count++ & 0x07],
                         random.nextBoolean());
+            }
+            for (int i = 0; i < users.length; i++) {
+                users[i] = null;
             }
         }
         User[] users2 = new User[20000];
