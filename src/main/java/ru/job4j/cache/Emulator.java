@@ -111,4 +111,5 @@ public class Emulator {
             System.out.printf("%d. %s%n", i + 1, items.get(i));
         }
     }
+
 }
