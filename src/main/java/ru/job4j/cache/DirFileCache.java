@@ -38,7 +38,6 @@ public class DirFileCache extends AbstractCache<String, String> {
         try {
             if (!cache.containsKey(key) || cache.get(key).get() == null) {
                 value = Files.readString(Paths.get(cachingDir, key));
-                put(key, value);
             }
         } catch (IOException err) {
             err.printStackTrace();
